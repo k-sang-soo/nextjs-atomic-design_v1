@@ -4,12 +4,12 @@ import { ReactNode } from 'react';
 
 const cx = classNames.bind(styles);
 
-interface ICardTransparent {
+interface ICardWhite {
     children?: ReactNode;
 }
 
-const CardTransparent = ({ children }: ICardTransparent) => {
-    return <div>{children}</div>;
+const CardWhite = ({ children }: ICardWhite) => {
+    return <div className={cx('card')}>{children}</div>;
 };
 
-export default CardTransparent;
+export default CardWhite;

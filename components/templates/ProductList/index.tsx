@@ -11,7 +11,7 @@ interface IProduct {
     imgAlt: string;
 }
 
-const Product = ({ bg, title, desc, imgSrc, imgAlt }: IProduct) => {
+const ProductList = ({ bg, title, desc, imgSrc, imgAlt }: IProduct) => {
     return (
         <>
             {bg === 'white' ? (
@@ -33,4 +33,4 @@ const Product = ({ bg, title, desc, imgSrc, imgAlt }: IProduct) => {
     );
 };
 
-export default Product;
+export default ProductList;
